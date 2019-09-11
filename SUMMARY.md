@@ -44,6 +44,8 @@
   * [Por que você precisa de um framework?](django-o-que-e/por-que-voce-precisa-de-um-framework.md)
   * [O que acontece quando alguém solicita um site do seu servidor?](django-o-que-e/o-que-acontece-quando-alguem-solicita-um-site-do-seu-servidor.md)
 * [Seu primeiro projeto Django](seu-primeiro-projeto-django/README.md)
+  * [Instalação do Django](seu-primeiro-projeto-django/instalacao-do-django.md)
+  * [Seu primeiro projeto Django!](seu-primeiro-projeto-django/seu-primeiro-projeto-django.md)
   * [Configurando](seu-primeiro-projeto-django/configurando.md)
   * [Instalando o banco de dados](seu-primeiro-projeto-django/instalando-o-banco-de-dados.md)
 * [Modelos do Django](modelos-do-django/README.md)
