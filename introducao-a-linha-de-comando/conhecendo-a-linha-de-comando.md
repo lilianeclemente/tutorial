@@ -2,17 +2,17 @@
 
 Para começar alguns experimentos, precisamos acessar a linha de comando primeiro.
 
-## Sourcelair
+## Codenvy
 
-No Sourcelair, a linha de comando já está aberta para você, na parte inferior da sua tela.
+No Codenvy, a linha de comando já está aberta para você, na parte inferior da sua tela.
 
-![](../.gitbook/assets/10.png)
+![](../.gitbook/assets/captura-de-tela-de-2019-09-11-16-18-10.png)
 
 ## Prompt
 
 Esta janela preta está à espera de seus comandos.
 
-![](../.gitbook/assets/11.png)
+![Prompt](../.gitbook/assets/captura-de-tela-de-2019-09-11-16-48-21.png)
 
 ### Sumário <a id="sum&#xE1;rio"></a>
 
