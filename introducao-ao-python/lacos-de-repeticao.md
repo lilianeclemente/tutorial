@@ -23,8 +23,7 @@ Aqui está o código completo que será salvo no arquivo:
 ```text
 def oi(nome):
     print('Oi ' + nome + '!')
-
-garotas = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+garotas = ['Maria', 'Monica', 'Phoebe', 'Ola', 'You']
 for nome in garotas:
     oi(nome)
     print('Proxima!')
@@ -34,7 +33,7 @@ e quando executá-lo:
 
 ```text
 $ python3 python_intro.py
-Oi Rachel!
+Oi Maria!
 Proxima!
 Oi Monica!
 Proxima!

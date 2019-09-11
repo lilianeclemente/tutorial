@@ -8,7 +8,6 @@ Uma função é uma sequência de instruções que o Python deve executar. Cada 
 def oi():
     print('Olá!')
     print('Como vai você?')
-
 oi()
 ```
 
@@ -93,15 +92,14 @@ Vamos fazer algo mais inteligente..--existem mais que dois nomes, e escrever uma
 ```text
 def oi(nome):
     print('Oi ' + nome + '!')
-
-oi("Rachel")
+oi("Maria")
 ```
 
 Vamos chamar o código agora:
 
 ```text
 $ python3 python_intro.py
-Oi Rachel!
+Oi Maria!
 ```
 
 Parabéns! Você acabou de aprender a criar funções :\)!

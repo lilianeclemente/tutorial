@@ -10,9 +10,9 @@ Vamos escrever um pouco de código!
 
 ## Interpretador python
 
-Para começar a brincar com Python nós precisamos abrir uma linha de comando no seu computador. Você já deve saber como fazer isso -- você aprendeu isso no capítulo [Introdução à Linha de Comando](). Assim que estiver pronto\(a\), siga as instruções abaixo.
+Para começar a brincar com Python nós precisamos abrir uma linha de comando no seu computador. Você já deve saber como fazer isso -- você aprendeu isso no capítulo [**Introdução à Linha de Comando**]()**.** Assim que estiver pronto\(a\), siga as instruções abaixo.
 
-Nós queremos abrir o Python num terminal, então digite python3 no terminal \(verifique se está na janela que aparece usuario@AfroPython:/mnt/project$\) e tecle Enter.
+Nós queremos abrir o Python num terminal, então digite python3 no terminal \(verifique se está na janela que aparece user@XXXXXXXXX:/projects$\) e tecle Enter.
 
 ```text
 $ python3
@@ -31,4 +31,6 @@ Depois de executar o comando Python, o prompt mudou para `>>>`. Para nós, isso 
 ```
 
 Incrível! Vê como a resposta simplesmente aparece? O Python conhece matemática! Você pode tentar outros comandos como: - `4 * 5` - `5 - 1` - `40 / 2` Divirta-se com isso por um tempo e depois volte aqui :\). Como você pode ver, o Python é uma ótima calculadora. Se você está se perguntando o que mais você pode fazer... Vamos aprender um pouco mais?
+
+_Use ctrl + D para sair do terminal &gt;&gt;&gt; com o python, se precisar._
 
