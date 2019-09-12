@@ -3,7 +3,7 @@
 Abra o terminal e digite:
 
 ```text
-...@Django:/mnt/project$ python3 manage.py shell
+python3 manage.py shell
 ```
 
 O resultado deve ser:

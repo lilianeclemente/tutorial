@@ -25,7 +25,7 @@ blog/templates/blog/post\_edit.html
 
 Hora de atualizar! Há! Seu formulário apareceu!
 
-///////////////imagem djangooooooooooooooooo////////////////////\*\*\*\*
+![Novo formul&#xE1;rio](https://tutorial.djangogirls.org/pt/django_forms/images/new_form2.png)
 
 Mas, espere um minuto! Quando você digita alguma coisa nos campos `title` e `text` e tenta salvar, o que acontece?
 

@@ -79,11 +79,11 @@ form = PostForm(instance=post)
 
 Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
 
-//////////////////////////imagem djangoo////////////////////////////\*\*\*\*
+![Bot&#xE3;o editar](https://tutorial.djangogirls.org/pt/django_forms/images/edit_button2.png)
 
 Quando você clicar nele você verá o formulário com a nossa postagem:
 
-//////////////////////////imagem djangoo////////////////////////////\*\*\*\*
+![Editando o formul&#xE1;rio](https://tutorial.djangogirls.org/pt/django_forms/images/edit_form2.png)
 
 Sinta-se livre para mudar o título ou o texto e salvar as mudanças!
 

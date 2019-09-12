@@ -15,12 +15,28 @@ Como você pode ver, nós importamos \(incluímos\) o modelo Post definido no ca
 
 OK, hora de olhar para o nosso modelo de Post. Lembre-se de acessar o ícone na lateral esquerda da tela de novo. Vá no navegador e adicione na URL o /admin. No nosso exemplo vai ficar [https://b6sdo2j4.apps.lair.io/admin](https://b6sdo2j4.apps.lair.io/admin) Você verá uma página de login assim:
 
-/////////////////imagem djangooooooooooooooooooooooooo////////\*\*\*\*\*\*\*\*\*\*
+![P&#xE1;gina de login](https://tutorial.djangogirls.org/pt/django_admin/images/login_page2.png)
 
-Para fazer login você precisa criar um superuser - um usuário que possui controle sobre tudo do site. Volte para o terminal e digite `python3 manage.py createsuperuser`, pressione enter e digite seu nome de usuário \(caixa baixa, sem espaço\), endereço de e-mail e password quando eles forem requisitados. Não se preocupe que você não pode ver a senha que você está digitando - é assim que deve ser. Só digitá-la e pressione 'Enter' para continuar. A saída deve parecer com essa \(onde Username e Email devem ser os seus\):
+Para fazer login, você precisa criar um _superusuário \(superuser\)_ - uma conta de usuário que pode controlar tudo no site. Volte à linha de comando, digite:
+
+`python manage.py createsuperuser` 
+
+e aperte Enter.
+
+Para fazer login você precisa criar um superuser - um usuário que possui controle sobre tudo do site. Volte para o terminal e digite:
+
+`python3 manage.py createsuperuser`
+
+pressione enter 
+
+digite seu nome de usuário \(caixa baixa, sem espaço\)
+
+endereço de e-mail e password 
+
+Não se preocupe que você não pode ver a senha que você está digitando - é assim que deve ser. Só digitá-la e pressione 'Enter' para continuar. A saída deve parecer com essa \(onde Username e Email devem ser os seus\):
 
 ```text
-…@AfroPython:/mnt/project$ python3 manage.py createsuperuser
+…@djangoGirls:/mnt/project$ python3 manage.py createsuperuser
 Username (leave blank to use 'www-data'): admin
 Email address: admin@admin.com
 Password: Afropython123
@@ -30,13 +46,13 @@ Superuser created successfully.
 
 Volte para a o navegador e faça login com as credenciais de superuser que você escolheu, você deve visualizar o painel de controle do Django admin.
 
-/////////////////imagem djangooooooooo/////////////////////////\*\*\*\*\*\*\*\*\*\*\*\*
+![Django Admin](https://tutorial.djangogirls.org/pt/django_admin/images/django_admin3.png)
 
 Vá para as postagens e experimente um pouco com elas. Adicione cinco ou seis postagens. Não se preocupe com o conteúdo - você pode copiar e colar algum texto deste tutorial para o conteúdo para economizar tempo :\).
 
 Certifique-se que pelo menos duas ou três postagens \(mas não todas\) tenham a data de publicação definida. Isso será útil depois.
 
-////////////////imagem djangooooo//////////////////////////////////\*\*\*\*\*\*\*\*\*
+![](.gitbook/assets/image%20%282%29.png)
 
 Se você quiser saber mais sobre o Django admin, você deve conferir a documentação do Django: [https://docs.djangoproject.com/en/1.8/ref/contrib/admin/](https://docs.djangoproject.com/en/1.8/ref/contrib/admin/)
 

@@ -17,11 +17,11 @@ blog/templates/blog/post\_list.html
 ```markup
 <html>
     <head>
-        <title>Blog do AfroPython</title>
+        <title>Django Girls Blog</title>
     </head>
     <body>
         <div>
-            <h1><a href="">Blog do AfroPython</a></h1>
+            <h1><a href="">Django Girls Blog</a></h1>
         </div>
 
         <div>
@@ -46,9 +46,9 @@ Nós criamos três seções `div` aqui.
 
 Isso nos dá o seguinte efeito:
 
-//////////////////////////imagemmmmmmmdjangooooooooooo/////////\*\*\*\*\*\*\*\*\*\*\*\*
+![Figura 11.4](https://tutorial.djangogirls.org/pt/html/images/step6.png)
 
-Yaaay! Mas, até agora, nosso template mostra exatamente **sempre a mesma informação** - sendo que, anteriormente, nós falávamos sobre templates como uma maneira para exibir informações **diferentes** em um **mesmo formato**.
+Uhuu! Mas, até agora, nosso template mostra exatamente **sempre a mesma informação** - sendo que, anteriormente, nós falávamos sobre templates como uma maneira para exibir informações **diferentes** em um **mesmo formato**.
 
 O que nós realmente queremos fazer é exibir postagens reais que foram adicionadas no Django admin - e isso é o que faremos em seguida.
 

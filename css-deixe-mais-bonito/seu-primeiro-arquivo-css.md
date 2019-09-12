@@ -88,7 +88,7 @@ OK, salve o arquivo e atualize o site!
 
 > Dica: se nada acontecer, tente reinicar o servidor. Abra a Command Pallete pelo ícone no menu lateral, procure por `Restart Server` e aperte Enter.
 
-////////////////////imagem djangoooooooooooooooooooo////////////////////////////\*\*
+![Figura 14.2](https://tutorial.djangogirls.org/pt/css/images/color2.png)
 
 Bom trabalho! Talvez a gente também queira dar um pouco de ar ao nosso site e aumentar a margem do lado esquerdo? Vamos tentar!
 
@@ -102,9 +102,7 @@ body {
 
 Adicione isto ao seu arquivo CSS, salve e veja como ele funciona!
 
-////////////////////imagem djangoooooooooooooooooooo////////////////////////////\*\*
-
-
+![Figura 14.3](https://tutorial.djangogirls.org/pt/css/images/margin2.png)
 
 Talvez a gente possa customizar a fonte no nosso cabeçalho? Cole na seção `<head>` do arquivo `blog/templates/blog/post_list.html` o seguinte:
 
@@ -129,7 +127,7 @@ h1 a {
 }
 ```
 
-////////////////////imagem djangoooooooooooooooooooo////////////////////////////\*\*
+![Figura 14.3](https://tutorial.djangogirls.org/pt/css/images/font.png)
 
 Incrível!
 
@@ -141,7 +139,7 @@ blog/templates/blog/post\_list.html
 
 ```markup
 <div class="cabecalho-pagina">
-    <h1><a href="/">Blog do AfroPython</a></h1>
+    <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 ```
 
@@ -248,7 +246,7 @@ blog/templates/blog/post\_list.html
 
 Salve esses arquivos e atualize seu site.
 
-////////////////////imagem djangoooooooooooooooooooo////////////////////////////\*\*
+![Figura 14.4](https://tutorial.djangogirls.org/pt/css/images/final.png)
 
 Uhuu! Ficou incrível, né? Olhe para o código que nós acabamos de colar para encontrar os lugares aonde nós adicionamos classes no HTML e as usamos no CSS. Aonde você faria a mudança para que a data ficasse com a cor turquesa ?
 

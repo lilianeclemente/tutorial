@@ -20,6 +20,5 @@ Legal! Você já está pronto\(a\) para a próxima parte! Para fechar o terminal
 
 ```text
 >>> exit()
-$
 ```
 

@@ -13,9 +13,13 @@ O primeiro passo é iniciar um novo projeto Django. Basicamente, isso significa 
 
 Os nomes de alguns arquivos e diretórios são muito importantes para o Django. Você não deve renomear os arquivos que estamos prestes a criar. Mover para um lugar diferente também não é uma boa idéia. O Django precisa manter uma certa estrutura para conseguir encontrar algumas coisas importantes.
 
-> Lembre-se de rodar tudo no virtualenv. Se você não vê um prefixo `(myvenv)` em seu console, é necessário ativar o virtualenv. Nós explicamos como fazer isso no capítulo **Instalação do Django** na parte **Ambiente Virtual**. Digitar `myvenv\Scripts\activate` no Windows ou `source myvenv/bin/activate` no Mac OS / Linux fará isso para você.
-
-**Create project: OS X or LinuxCreate project: Windows**
+> Lembre-se de rodar tudo no virtualenv. Se você não vê um prefixo `(myvenv)` em seu console, é necessário ativar o virtualenv. Nós explicamos como fazer isso no capítulo **Instalação do Django** na parte **Ambiente Virtual**. Digitar 
+>
+> > ```text
+> > . myvenv/bin/activate
+> > ```
+>
+>  no prompt de comando na pasta 'djangoGirls' no codenvy.
 
 `django-admin` é um script que criará os diretórios e arquivos para você. Agora, você deve ter uma estrutura de diretório parecida com isso:
 
@@ -42,7 +46,7 @@ Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só
 
 ### Mudando as configurações <a id="mudando-as-configura&#xE7;&#xF5;es"></a>
 
-Vamos fazer algumas alterações no `mysite/settings.py`. Abra o arquivo usando o editor de código que você instalou anteriormente.
+Vamos fazer algumas alterações no `mysite/settings.py`. Abra o arquivo no codenvy.
 
 **Observação:** Lembre-se de que o `settings.py` é um arquivo comum, como qualquer outro. Você pode abri-lo de dentro do editor de código usando as ações de menu "Arquivo-&gt; Abrir". Assim, você deve encontrá-lo na janela usual para selecionar arquivos e abri-lo. Ou então, é possível abrir o arquivo navegando até o diretório do djangogirls e abrindo o arquivo com o botão direito. Uma vez clicado, selecione o seu editor de código preferido da lista. Selecionar o editor apropriado é importante uma vez que você pode ter outros programas instalados que podem abrir o arquivo, mas não editá-lo.
 
@@ -83,10 +87,6 @@ mysite/settings.py
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Observação:** Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
->
-> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9
-
 ### Configurando um banco de dados <a id="configurando-um-banco-de-dados"></a>
 
 Existem vários software de banco de dados diferentes que podem armazenar dados para o seu site. Nós vamos usar o padrão do Django, o `sqlite3`.
@@ -104,7 +104,13 @@ DATABASES = {
 }
 ```
 
-Para criar um banco de dados para o nosso blog, vamos executar o seguinte comando no console. Digite: `python manage.py migrate` \(precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`\). Se isso der certo, você deve ver algo assim:
+Para criar um banco de dados para o nosso blog, vamos executar o seguinte comando no console. 
+
+Digite: 
+
+`python manage.py migrate` 
+
+precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`. Se isso der certo, você deve ver algo assim:
 
 command-line
 
@@ -139,39 +145,13 @@ Você precisa estar no diretório que contém o arquivo `manage.py` \(o diretór
 command-line
 
 ```text
-(myvenv) ~/djangogirls$ python manage.py runserver
-```
-
-Se você usa um Chromebook, execute este comando:
-
-Cloud 9
-
-```text
-(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-```
-
-Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o comando alternativo:
-
-command-line
-
-```text
-(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+ python manage.py runserver
 ```
 
 Agora você precisa checar se o o seu site está funcionando. Abra o seu navegador \(Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você usa\) e coloque esse endereço:
 
-browser
-
 ```text
 http://127.0.0.1:8000/
-```
-
-Se você esta usando um Chromebook e o Cloud9, em vez disso clique no URL na janela "pop-up" que deve ter aparecido no canto superior direito da janela de comando onde o servidor está funcionando. A URL vai ser algo como:
-
-browser
-
-```text
-https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
 ```
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
@@ -182,7 +162,7 @@ Note que a janela de comando só pode rodar uma coisa de cada vez, e a janela de
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
-Para digitar comandos adicionais enquanto o servidor está rodando, abra uma nova janela de terminal e ative seu ambiente virtual, para revisar as instruções de como abrir uma segunda janela de terminal, veja [Introdução à linha de comando](https://tutorial.djangogirls.org/pt/intro_to_command_line/). Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos \(no Windows; tente Ctrl+Break se o primeiro não funcionar\).
+Para digitar comandos adicionais enquanto o servidor está rodando, abra uma nova janela de terminal e ative seu ambiente virtual, para revisar as instruções de como abrir uma segunda janela de terminal, veja [Introdução à linha de comando](https://tutorial.djangogirls.org/pt/intro_to_command_line/). Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos.
 
 Pronta para o próximo passo? Está na hora de criar conteúdo!
 

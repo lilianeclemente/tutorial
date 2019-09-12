@@ -46,8 +46,6 @@
 * [Seu primeiro projeto Django](seu-primeiro-projeto-django/README.md)
   * [Instalação do Django](seu-primeiro-projeto-django/instalacao-do-django.md)
   * [Seu primeiro projeto Django!](seu-primeiro-projeto-django/seu-primeiro-projeto-django.md)
-  * [Configurando](seu-primeiro-projeto-django/configurando.md)
-  * [Instalando o banco de dados](seu-primeiro-projeto-django/instalando-o-banco-de-dados.md)
 * [Modelos do Django](modelos-do-django/README.md)
   * [Objetos](modelos-do-django/objetos.md)
   * [Modelo do Django](modelos-do-django/modelo-do-django/README.md)

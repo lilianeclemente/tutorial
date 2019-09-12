@@ -14,24 +14,24 @@ blog/templates/blog/post\_list.html
 ```markup
 <html>
     <head>
-        <title>Blog do AfroPython</title>
+        <title>Ola's blog</title>
     </head>
     <body>
-        <p>Oi</p>
-        <p>Tudo funcionando por aqui :)</p>
+        <p>Hi there!</p>
+        <p>It works!</p>
     </body>
 </html>
 ```
 
 Salve o arquivo e atualize sua página.
 
-![](../.gitbook/assets/_step3.png)
+![Figura 11.3](https://tutorial.djangogirls.org/pt/html/images/step4.png)
 
-Viu como o navegador entendeu que "Blog do AfroPython" é o título da página? Ele interpretou `<title>Blog do AfroPython</title>` e colocou o texto na barra de título do seu navegador \(e também será usado para os favoritos e outras coisas mais\).
+Viu como o navegador entendeu que "Ola's blog" é o título da página? Ele interpretou `<title>Ola's blog</title>` e colocou o texto na barra de título do seu navegador \(e também será usado para os favoritos e outras coisas mais\).
 
 Provavelmente você já deve ter notado que cada tag de abertura casa com uma _tag de fechamento_, com uma `/`, e que os elementos estão _aninhados_ \(ex.: você não pode fechar uma tag em particular antes que todas as outras tags que estiverem dentro dela já estejam fechadas\).
 
-É como colocar coisas dentro de caixas. Você tem uma grande caixa, `<html></html>`; dentro dela há `<body></body>`, sendo que esta ainda contém caixas menors: `<p></p>`.
+É como colocar coisas dentro de caixas. Você tem uma grande caixa, `<html></html>`; dentro dela há `<body></body>`, sendo que esta ainda contém caixas menores: `<p></p>`.
 
 Você precisa seguir essas regras de _fechamento_ de tags, e de _aninhamento_ de elementos - se você não fizer isso, o navegador poderá não estar apto para interpretar seu código de maneira correta e sua página será exibida de maneira incorreta.
 

@@ -28,7 +28,7 @@ blog/templates/blog/base.html
 {% load staticfiles %}
 <html>
     <head>
-        <title>Blog do AfroPython</title>
+        <title>Django Girls Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -36,7 +36,7 @@ blog/templates/blog/base.html
     </head>
     <body>
         <div class="cabecalho-pagina">
-            <h1><a href="/">Blog do AfroPython</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         <div class="content container">
@@ -65,7 +65,7 @@ blog/templates/blog/base.html
 ```markup
 <body>
     <div class="cabecalho-pagina">
-        <h1><a href="/">Blog do AfroPython</a></h1>
+        <h1><a href="/">Django Girls Blog</a></h1>
     </div>
     <div class="content container">
         <div class="row">

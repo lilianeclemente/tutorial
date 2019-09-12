@@ -44,7 +44,7 @@ Tempo para explicar o misterioso \`
 
 Agora quando formos para sua página inicial, teremos um erro \(como esperado, já que não temos uma URL ou uma _view_ para `post_detail`\). Vai se parecer com isso:
 
-///////////////////////////imagem djangoooooooooooooooo//////////////////////\*\*\*
+![erro NoReverseMatch](https://tutorial.djangogirls.org/pt/extend_your_application/images/no_reverse_match2.png)
 
 ## Criando a URL para detalhe da postagem <a id="criando-a-url-para-detalhe-da-postagem"></a>
 
@@ -88,12 +88,13 @@ blog/views.py
 def post_detail(request, pk):    Post.objects.get(pk=pk)
 ```
 
-Mas este código tem um problema. Se não houver nenhum `Post` com a `chave primária` \(`pk`\) fornecida teremos um erro horroroso!  
-///////////////////////////imagem djangoooooooooooooooo//////////////////////\*\*\*
+Mas este código tem um problema. Se não houver nenhum `Post` com a `chave primária` \(`pk`\) fornecida teremos um erro horroroso!
+
+![erro NoReverseMatch](https://tutorial.djangogirls.org/pt/extend_your_application/images/no_reverse_match2.png)
 
 Não queremos isso! Mas, claro, o Django vem com algo que vai lidar com isso para nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk` informado, ele exibirá uma página muito mais agradável \(chamada `Page Not Found 404` - página não encontrada\).
 
-///////////////////////////imagem djangoooooooooooooooo//////////////////////\*\*\*
+![](.gitbook/assets/image%20%281%29.png)
 
 A boa notícia é que você realmente pode criar sua própria página de `Page not found` e torná-la tão bonita quanto você quiser. Mas isso não é super importante agora, então nós vamos pular essa parte.
 
@@ -119,11 +120,11 @@ def post_detail(request, pk):
 
 Sim. Está na hora de atualizar sua página inicial.
 
-///////////////////////////imagem djangoooooooooooooooo//////////////////////\*\*\*
+![View da lista de posts](https://tutorial.djangogirls.org/pt/extend_your_application/images/post_list2.png)
 
 Funcionou! Mas o que acontece quando você clica em um link no título do post do blog?
 
-//////////////////////////imagem djangoooooooooooooooo//////////////////////\*\*\*
+![erro TemplateDoesNotExist](https://tutorial.djangogirls.org/pt/extend_your_application/images/template_does_not_exist2.png)
 
 Ah não! Outro erro! Mas nós já sabemos como lidar com isso, não é? Precisamos adicionar um template!
 
@@ -141,8 +142,37 @@ blog/templates/blog/post\_detail.html
 
 Mais uma vez estamos estendendo `base.html`. No bloco `content` queremos exibir o `published_date` \(data de publicação\) da postagem \(se houver\), título e texto. Mas devemos discutir algumas coisas importantes, certo?
 
-Ok, podemos atualizar nossa página e ver se o `TemplateDoesNotExist`já se foi.  
-///////////////////////////imagem djangoooooooooooooooo//////////////////////\*\*\*
+Ok, podemos atualizar nossa página e ver se o `TemplateDoesNotExist`já se foi.
+
+![P&#xE1;gina de detalhes da postagem](https://tutorial.djangogirls.org/pt/extend_your_application/images/post_detail2.png)
 
 Yay! Funciona!
+
+## Hora do Deploy!  <a id="hora-do-deploy"></a>
+
+_Somente se você criou uma conta no pythonanywhere!!_
+
+Seria bom ver se seu site ainda estará trabalhando no PythonAnywhere, né? Vamos tentar fazer a implantação novamente.
+
+command-line
+
+```text
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+$ git push
+```
+
+Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/consoles/):
+
+PythonAnywhere command-line
+
+```text
+$ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
+$ git pull
+[...]
+```
+
+\(Lembre-se de substituir `<your-pythonanywhere-domain>` com o nome do seu subdomínio PythonAnywhere, sem os colchetes angulares, ou seja, sem &lt; e &gt;\).
 

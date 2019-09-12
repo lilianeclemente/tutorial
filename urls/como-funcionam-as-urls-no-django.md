@@ -1,6 +1,6 @@
 # Como funcionam as URLs no Django?
 
-Vamos abrir o arquivo `Django/urls.py`, ele deve ser alterado para ficar assim:
+Vamos abrir o arquivo `djangoGirls/urls.py`, ele deve ser alterado para ficar assim:
 
 ```text
 from django.contrib import admin

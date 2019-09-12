@@ -6,7 +6,7 @@ Também queremos manter o arquivo de `Django/urls.py` limpo, aí nós importarem
 
 Vá em frente e adicione uma linha que vai importar `blog.urls` para a url principal \(`''`\).
 
-O seu arquivo `AfroPython/urls.py` deve agora se parecer com isto:
+O seu arquivo `djangoGirls/urls.py` deve agora se parecer com isto:
 
 ```text
 from django.contrib import admin
