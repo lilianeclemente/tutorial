@@ -7,7 +7,6 @@
   * [Crie uma conta](sourcelair/crie-uma-conta.md)
   * [Complete o cadastro](sourcelair/complete-o-cadastro.md)
   * [Dashboard](sourcelair/dashboard.md)
-  * [Dashboard](sourcelair/criando-um-projeto.md)
 * [Como funciona a internet?](untitled.md)
 * [Introdução a linha de comando](introducao-a-linha-de-comando/README.md)
   * [O que é a linha de comando?](introducao-a-linha-de-comando/o-que-e-a-linha-de-comando.md)
