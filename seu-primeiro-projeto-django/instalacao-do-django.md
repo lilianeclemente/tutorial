@@ -1,32 +1,10 @@
----
-description: >-
-  Observação: Se você está usando um Chromebook, pule este capítulo e
-  certifique-se de seguir as instruções para Configuração do
-  Chromebook.Observação: Se você já seguiu o passo a passo da instalação,
----
-
 # Instalação do Django
 
 ### Ambiente virtual <a id="ambiente-virtual"></a>
 
-Antes de instalar o Django, vamos instalar uma ferramenta muito útil para ajudar a manter o ambiente de trabalho no nosso computador organizado. Você pode pular esse passo, mas ele é altamente recomendado. Começar com a melhor instalação possível poupará você de muito trabalho no futuro!
-
-Vamos criar um **ambiente virtual** \(também chamado um _virtualenv_\). O virtualenv isolará seu código Python/Django em um ambiente organizado por projetos. Isso significa que as alterações que você fizer em um website não afetarão os outros projetos que você estiver desenvolvendo ao mesmo tempo. Legal, né?
-
-Tudo o que você precisa fazer é encontrar o diretório em que você quer criar o `virtualenv`; seu diretório será a pasta 'djangoGirls' que você criou na plataforma codenvy. 
-
-Para este tutorial, usaremos um novo diretório `djangogirls` no seu diretório home:
-
-command-line
-
-```text
-$ mkdir djangogirls // use este comando somente se você não tem esta pasta criada!
-$ cd djangogirls
-```
-
 Vamos fazer um virtualenv chamado `myvenv`. O formato geral desse comando é:
 
-command-line
+command-line\(terminal\)
 
 ```text
 $ python3 -m venv myvenv
@@ -105,5 +83,23 @@ Installing collected packages: Django
 Successfully installed Django-2.2.4
 ```
 
+### Importante!
+
+No terminal, rode o comando abaixo \(\*\*não esqueça de adicionar o ponto `.` no final!!
+
+command-line\(terminal\)
+
+```text
+(myvenv) ~/djangogirls$ django-admin startproject mysite .
+```
+
+> O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual \(o ponto `.` é um atalho para referenciar este diretório\).
+>
+> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você digitar seus comandos.
+
 É isto! Você agora \(finalmente\) está pronta para criar uma aplicação Django!
+
+### OBSERVAÇÃO:
+
+Se o arquivo `main.py` ainda esta dentro do diretório `djangoGirls`, ele pode ser deletado neste momento. Pode clicar com o botão direito em cima do arquivo e selecionar a opção delete
 
