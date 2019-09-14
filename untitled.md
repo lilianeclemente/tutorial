@@ -4,7 +4,7 @@
 
 > _Este capítulo é inspirado na palestra "Como a Internet funciona" de Jessica McKellar \(_[http://web.mit.edu/jesstess/www/](http://web.mit.edu/jesstess/www/)_\)._
 
-Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando você digita um endereço como [https://afropython.org](https://afropython.org) em seu navegador e pressiona 'Enter'?
+Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando você digita um endereço como [https://djangogirls/portoalegre](https://djangogirls.org/portoalegre/) em seu navegador e pressiona 'Enter'?
 
 A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Assim como os filmes, músicas ou fotos que você tem no computador. No entanto, existe uma parte que é exclusiva para sites: essa parte inclui código de computador chamado HTML.
 
