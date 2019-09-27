@@ -21,7 +21,9 @@ Você pode ver, tudo que temos é algo parecido com:
 Isto significa que o Django a entende como uma lista de objetos. Lembre-se de **introdução ao Python** como podemos exibir listas? Sim, com os loops! Em um template Django, fazemos isso da seguinte maneira:
 
 ```text
-{% for post in posts %}    {{ post }}{% endfor %}
+{% for post in posts %}    
+    {{ post }}
+{% endfor %}
 ```
 
 Tente fazer isso no seu template.
