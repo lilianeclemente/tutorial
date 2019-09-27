@@ -63,14 +63,14 @@ blog/templates/blog/post\_list.html
 {% load staticfiles %}
 <html>
     <head>
-        <title>Blog do AfroPython</title>
+        <title>Django Girls Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         <div>
-            <h1><a href="/">Blog do AfroPython</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         {% for post in posts %}
