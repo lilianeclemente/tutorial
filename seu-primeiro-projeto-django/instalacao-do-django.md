@@ -8,6 +8,8 @@ command-line\(terminal\)
 
 ```text
 $ python3 -m venv myvenv
+ou
+$ python -m venv myvenv
 ```
 
 ### Trabalhando com o virtualenv <a id="trabalhando-com-o-virtualenv"></a>
@@ -71,9 +73,13 @@ djangogirls/requirements.txt
 Django~=2.2.4
 ```
 
-Agora, execute `pip install -r requirements.txt` para instalar o Django.
+Agora, execute:
 
-command-line
+`pip install -r requirements.txt` 
+
+Assim vamos instalar o Django!!
+
+command-line\(importante verificar se após o comando acima, o terminal fica como a tela abaixo\)
 
 ```text
 (myvenv) ~$ pip install -r requirements.txt
@@ -90,16 +96,16 @@ No terminal, rode o comando abaixo \(\*\*não esqueça de adicionar o ponto `.` 
 command-line\(terminal\)
 
 ```text
-(myvenv) ~/djangogirls$ django-admin startproject mysite .
+(myvenv) ~/djangoGirls$ django-admin startproject mysite .
 ```
 
 > O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual \(o ponto `.` é um atalho para referenciar este diretório\).
 >
-> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você digitar seus comandos.
+> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin`. A parte `(myvenv) ~/djangoGirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você digitar seus comandos.
 
 É isto! Você agora \(finalmente\) está pronta para criar uma aplicação Django!
 
 ### OBSERVAÇÃO:
 
-Se o arquivo `main.py` ainda esta dentro do diretório `djangoGirls`, ele pode ser deletado neste momento. Pode clicar com o botão direito em cima do arquivo e selecionar a opção delete
+Se o arquivo `main.py` ainda esta dentro do diretório\(pasta\) `djangoGirls`, ele pode ser deletado neste momento. Pode clicar com o botão direito em cima do arquivo e selecionar a opção delete
 
