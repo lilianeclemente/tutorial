@@ -84,7 +84,7 @@ Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site se
 mysite/settings.py
 
 ```text
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 ```
 
 ### Configurando um banco de dados <a id="configurando-um-banco-de-dados"></a>
@@ -152,6 +152,7 @@ Agora você precisa checar se o o seu site está funcionando. Abra o seu navegad
 
 ```text
 http://127.0.0.1:8000/
+
 ```
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
