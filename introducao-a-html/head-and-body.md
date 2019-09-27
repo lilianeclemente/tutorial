@@ -14,11 +14,11 @@ blog/templates/blog/post\_list.html
 ```markup
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Meu blog</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <p>Olá!</p>
+        <p>Funcionou!</p>
     </body>
 </html>
 ```
@@ -27,7 +27,7 @@ Salve o arquivo e atualize sua página.
 
 ![Figura 11.3](https://tutorial.djangogirls.org/pt/html/images/step4.png)
 
-Viu como o navegador entendeu que "Ola's blog" é o título da página? Ele interpretou `<title>Ola's blog</title>` e colocou o texto na barra de título do seu navegador \(e também será usado para os favoritos e outras coisas mais\).
+Viu como o navegador entendeu que "Meu blog" é o título da página? Ele interpretou `<title>Meu blog</title>` e colocou o texto na barra de título do seu navegador \(e também será usado para os favoritos e outras coisas mais\).
 
 Provavelmente você já deve ter notado que cada tag de abertura casa com uma _tag de fechamento_, com uma `/`, e que os elementos estão _aninhados_ \(ex.: você não pode fechar uma tag em particular antes que todas as outras tags que estiverem dentro dela já estejam fechadas\).
 
