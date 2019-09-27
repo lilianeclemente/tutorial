@@ -19,7 +19,7 @@ urlpatterns = [
 ]
 ```
 
-Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` para a URL ```. Este padrão irá mostrar ao Django que``views.post\_list\` é o lugar certo para ir, se alguém entra na sua página inicial.
+Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` para a URL `''`. Este padrão irá mostrar ao Django que ``views.post\_list\` é o lugar certo para ir, se alguém entra na sua página inicial.
 
 Tudo certo? Se você tentar rodar o projeto agora, não vai conseguir.
 

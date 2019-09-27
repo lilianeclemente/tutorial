@@ -1,5 +1,9 @@
 # Criando uma aplicação
 
+Volte ao seu workspace e, no terminal, escreva o comando para parar de rodar o servidor do django:
+
+`pkill -f runserver`
+
 Para manter tudo arrumado vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console:
 
 `python3 manage.py startapp blog`

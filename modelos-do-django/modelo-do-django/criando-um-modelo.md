@@ -9,6 +9,7 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth import get_user_model
 
+
 class Post(models.Model):
     author = models.ForeignKey(
         get_user_model(), on_delete=models.CASCADE)
@@ -25,6 +26,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
 ```
 
 > Certifique-se de ter usado dois caracteres `(_)` em cada lado do str. Aqueles caracteres são usados freqüentemente em Python e às vezes os chamamos de `"dunder"` \(abreviação de "double-underscore" ou "duplo sublinhado"\).

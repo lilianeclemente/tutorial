@@ -42,7 +42,7 @@ O arquivo `settings.py` contém a configuração do seu site.
 
 Lembra de quando falamos sobre um carteiro verificando onde entregar uma carta? O arquivo `urls.py` contém uma lista dos padrões usados por `urlresolver`.
 
-Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de não excluí-los por acidentalmente!
+Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de não excluí-los por acidente!
 
 ### Mudando as configurações <a id="mudando-as-configura&#xE7;&#xF5;es"></a>
 
@@ -79,7 +79,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponderá ao nosso domínio no PythonAnywhere quando implantarmos a nossa aplicação, então vamos mudamos a seguinte configuração:
+Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponderá ao nosso domínio no Codenvy quando implantarmos a nossa aplicação, então vamos mudamos a seguinte configuração:
 
 mysite/settings.py
 
@@ -145,15 +145,26 @@ Você precisa estar no diretório que contém o arquivo `manage.py` \(o diretór
 command-line
 
 ```text
- python manage.py runserver
+ python manage.py runserver 0:8080
 ```
 
-Agora você precisa checar se o o seu site está funcionando. Abra o seu navegador \(Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você usa\) e coloque esse endereço:
+Seu site está no ar! Mas… como fazer para acessá-lo?
 
-```text
-http://127.0.0.1:8000/
+Precisamos buscar a url do Codenvy. Para isso, clique em Workspaces, no lado esquerdo da tela:
 
-```
+![Workspaces](../.gitbook/assets/screenshot_workspaces.png)
+
+Depois clique em cima do nome do seu workspace:
+
+![Seu workspace](../.gitbook/assets/screenshot_workspace.png)
+
+Clique em servers:
+
+![Servers](../.gitbook/assets/screenshot_servers.png)
+
+Agora, procure na lista o servidor que está na porta 8080. Copie o endereço que está ao lado e cole em uma nova aba do navegador:
+
+![Port 8080](../.gitbook/assets/screenshot_8080.png)
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
 
