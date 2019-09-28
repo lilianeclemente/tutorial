@@ -23,7 +23,15 @@ Para fazer login, você precisa criar um _superusuário \(superuser\)_ - uma con
 
 e aperte Enter.
 
-Digite seu nome de usuário \(caixa baixa, sem espaço\), endereço de e-mail e senha.
+Para fazer login você precisa criar um superuser - um usuário que possui controle sobre tudo do site. Volte para o terminal e digite:
+
+`python3 manage.py createsuperuser`
+
+pressione enter 
+
+digite seu nome de usuário \(caixa baixa, sem espaço\)
+
+endereço de e-mail e password 
 
 Não se preocupe que você não pode ver a senha que você está digitando - é assim que deve ser. Só digitá-la e pressione 'Enter' para continuar. A saída deve parecer com essa \(onde Username e Email devem ser os seus\):
 
@@ -31,12 +39,12 @@ Não se preocupe que você não pode ver a senha que você está digitando - é 
 …@djangoGirls:/mnt/project$ python3 manage.py createsuperuser
 Username (leave blank to use 'www-data'): admin
 Email address: admin@admin.com
-Password: DjangoGirls2019
-Password (again): DjangoGirls2019
+Password: Afropython123
+Password (again): Afropython123
 Superuser created successfully.
 ```
 
-Rode novamente o servidor, volte para a o navegador e faça login com as credenciais de superuser que você escolheu, você deve visualizar o painel de controle do Django admin.
+Volte para a o navegador e faça login com as credenciais de superuser que você escolheu, você deve visualizar o painel de controle do Django admin.
 
 ![Django Admin](https://tutorial.djangogirls.org/pt/django_admin/images/django_admin3.png)
 

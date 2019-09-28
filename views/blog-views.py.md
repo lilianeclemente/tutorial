@@ -8,7 +8,7 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Não tem muita coisa. Remova a parte comentada e acrescente essa view bem básica:
+Não tem muita coisa. A view mais básica se parece com isto.
 
 ```text
 def post_list(request):

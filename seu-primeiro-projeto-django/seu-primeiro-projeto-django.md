@@ -42,7 +42,7 @@ O arquivo `settings.py` contém a configuração do seu site.
 
 Lembra de quando falamos sobre um carteiro verificando onde entregar uma carta? O arquivo `urls.py` contém uma lista dos padrões usados por `urlresolver`.
 
-Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de não excluí-los por acidente!
+Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de não excluí-los por acidentalmente!
 
 ### Mudando as configurações <a id="mudando-as-configura&#xE7;&#xF5;es"></a>
 
@@ -84,7 +84,7 @@ Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site se
 mysite/settings.py
 
 ```text
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.codenvy.io']
 ```
 
 ### Configurando um banco de dados <a id="configurando-um-banco-de-dados"></a>
@@ -108,7 +108,11 @@ Para criar um banco de dados para o nosso blog, vamos executar o seguinte comand
 
 Digite: 
 
-`python manage.py migrate` 
+```text
+(myvenv) ~/djangogirls$ python manage.py migrate
+```
+
+ 
 
 precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`. Se isso der certo, você deve ver algo assim:
 
@@ -145,30 +149,28 @@ Você precisa estar no diretório que contém o arquivo `manage.py` \(o diretór
 command-line
 
 ```text
- python manage.py runserver 0:8080
+ (myvenv) ~/djangogirls$ python manage.py runserver
 ```
 
-Seu site está no ar! Mas… como fazer para acessá-lo?
+Agora você precisa checar se o o seu site está funcionando!
 
-Precisamos buscar a url do Codenvy. Para isso, clique em Workspaces, no lado esquerdo da tela:
+Digite o comando abaixo: 
 
-![Workspaces](../.gitbook/assets/screenshot_workspaces.png)
+```text
+(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+```
 
-Depois clique em cima do nome do seu workspace:
+se não funcionar, tente este outro comando:
 
-![Seu workspace](../.gitbook/assets/screenshot_workspace.png)
+```text
+(myvenv) ~/djangogirls$ python manage.py runserver 0:8080
+```
 
-Clique em servers:
-
-![Servers](../.gitbook/assets/screenshot_servers.png)
-
-Agora, procure na lista o servidor que está na porta 8080. Copie o endereço que está ao lado e cole em uma nova aba do navegador:
-
-![Port 8080](../.gitbook/assets/screenshot_8080.png)
-
-Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
+Se funcionou um dos comandos acima, então uma aba do navegador padrão do computador que esta utilizando vai abrir uma tela como a imagem abaixo.
 
 ![Instala&#xE7;&#xE3;o funcionou!](https://tutorial.djangogirls.org/pt/django_start_project/images/install_worked.png)
+
+Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
 
 Note que a janela de comando só pode rodar uma coisa de cada vez, e a janela de comando que você abriu anteriormente já está rodando o servidor. Enquanto o servidor web estiver executando e esperando por solicitações de entrada, o terminal vai aceitar o novo testo mas não executará novos comandos.
 
