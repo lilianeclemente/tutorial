@@ -166,7 +166,27 @@ se não funcionar, tente este outro comando:
 (myvenv) ~/djangogirls$ python manage.py runserver 0:8080
 ```
 
-Se funcionou um dos comandos acima, então uma aba do navegador padrão do computador que esta utilizando vai abrir uma tela como a imagem abaixo.
+Você precisa estar no diretório que contém o arquivo manage.py \(o diretório djangogirls\). No console, nós podemos iniciar o servidor web executando o python manage.py runserver: command-line python manage.py runserver 0:8080
+
+Seu site está no ar! Mas… como fazer para acessá-lo?
+
+Precisamos buscar a url do Codenvy. Para isso, clique em Workspaces, no lado esquerdo da tela:
+
+![](https://lh6.googleusercontent.com/3gax6B1eDEj8IphWFEBexXSl8UqW7oH4wMWfFYXwtrszrkPkS6u6lffGj_GbuCMmv3UfPP7am6GDJbYB_e5H2PLlmlBygfBo7NFyAItJuftXfjrneO6mxbjeEuRjgl0nwTetWdZC)
+
+
+
+![](https://lh3.googleusercontent.com/v7SN2m5DLQ_xmC8E_ztKcALb6ZVJ5bGFuGsFHatJTcr9Bqyewgy0FybDX66c-nfYaniN-ohNvbPqAvpPdPGoqaKUFqtO8_nvz9-d7UFyP6pCLgKSNfDwt9fHbhLOR94IHqolGRQo)
+
+![](https://lh5.googleusercontent.com/9K94LilxQE_SeYCsSzof4-u7lwApKGLN_67ITkWH8mklbVPWYNa-GNeof3ULfhGeoFNlZmbkJ8z1ngkahFSeCaw--t6wJd6Y2U511DcfeMxokkkMrf9PD7Xpkn4Uk9nYCF9UW7Kg)
+
+Agora, procure na lista o servidor que está na porta 8080. Copie o endereço que está ao lado e cole em uma nova aba do navegador, vai ser tipo o exemplo abaixo:
+
+```text
+http://node11.codenvy.io:54664/
+```
+
+Se funcionou corretamente, então uma aba do navegador padrão do computador que esta utilizando vai abrir uma tela como a imagem abaixo.
 
 ![Instala&#xE7;&#xE3;o funcionou!](https://tutorial.djangogirls.org/pt/django_start_project/images/install_worked.png)
 
